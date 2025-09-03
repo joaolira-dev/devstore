@@ -14,7 +14,7 @@ server.use((err: any, req: Request, res: Response, next: NextFunction) => {
   res.status(500).json({ error: "Ocorreu algum error interno" })
 })
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 server.listen(port, () => {
   console.log("DevStore backend is running in http://localhost:"+port)
 })
